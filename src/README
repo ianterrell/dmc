@@ -1,0 +1,11 @@
+All original code is (C) 2004 Ian Terrell.
+The project homepage resides at http://merlin.physics.wm.edu/~ian/dmcview/
+All of the source code is released under the GPL.
+
+COMPILE:
+To compile automatically, make sure you have Apache Ant installed, and from
+any directory type "ant".  This will put all the class files in the directory
+class/ which is located on the same level as src.
+
+RUN:
+Run by going to the class directory and typing "java GUI"

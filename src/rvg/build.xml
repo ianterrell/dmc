@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="dmc" basedir="." default="compile">
+	<target name="compile" description="Compiles the project">
+		<ant dir=".." target="compile" inheritAll="false"/>
+	</target>
+</project>

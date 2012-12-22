@@ -1,0 +1,8 @@
+The Diffusion Monte Carlo algorithm comes from the paper "Introduction to 
+the Diffusion Monte Carlo Method" by Ioan Kosztin, Byron Faber and Klaus 
+Schulten in 1995.
+
+The Graph package used somes from the University of Alabama in Huntsville.
+
+The random variate algorithms come from C code written by Steve Park and 
+Dave Geyer for an introductory simulation class at William and Mary.

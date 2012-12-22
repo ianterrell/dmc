@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="dmc" basedir="." default="compile">
+
+	<property name="src.dir" value="."/>
+	<property name="class.dir" value="../class"/>
+        <property name="doc.dir" value="../doc"/>
+	
+	<path id="project.classpath">
+		<!-- the user's current classpath -->
+		<pathelement path="${java.class.path}"/>
+		
+		<!-- our compilation directory -->
+		<pathelement location="${class.dir}"/>
+	</path>
+
+
+	<target name="clean" description="Delete all generated files">
+		<delete failonerror="false" includeEmptyDirs="true">
+			<fileset dir="${class.dir}">
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="compile" description="Compiles all modules">
+		<mkdir dir="${class.dir}"/>
+		<javac debug="true" destdir="${class.dir}">
+			<src path="${src.dir}"/>
+		</javac>
+	</target>
+
+	<target name="javadoc" description="generate documentation with Javadoc">
+		<javadoc destdir="${doc.dir}"
+			author="true"
+			version="true"
+			use="true"
+			private="true"
+			windowtitle="Diffusion Monte Carlo Documentation">
+			<fileset dir="${src.dir}"/>
+		</javadoc>
+	</target>
+</project>
